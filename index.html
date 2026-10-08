@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pudding Clipper</title>
+<meta name="description" content="A personal tool that edits highlight clips and uploads them to the owner's own YouTube channels.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main>
+<nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a></nav>
+<h1>Pudding Clipper</h1>
+<p class="mut">A personal clip-editing tool. Not a public service.</p>
+
+<h2>What it is</h2>
+<p>Pudding Clipper is a private desktop tool used by a single person (the channel owner) to cut highlight clips from VTuber live-stream archives, add subtitles and simple effects, render the videos on their own PC, and upload the finished videos to their own YouTube channels.</p>
+
+<h2>How it uses the YouTube API</h2>
+<ul>
+<li><b>Upload</b> (<code>videos.insert</code>): uploads a video the owner rendered, with the title, description and tags the owner entered.</li>
+<li><b>Thumbnail</b> (<code>thumbnails.set</code>): sets the custom thumbnail generated for that video.</li>
+<li><b>Status</b> (<code>videos.list</code>): checks the processing status and privacy of videos the tool uploaded.</li>
+</ul>
+<p>OAuth scopes: <code>youtube.upload</code>, <code>youtube.readonly</code>. The tool only acts on the two channels owned by the operator:</p>
+<ul>
+<li>プリン戦士 (Japanese) — <a href="https://www.youtube.com/@pudding-sensi">@pudding-sensi</a></li>
+<li>푸링전사 (Korean) — <a href="https://www.youtube.com/channel/UCNh6vEwAXp_2YKaA_555LAQ">UCNh6vEwAXp_2YKaA_555LAQ</a></li>
+</ul>
+<p>There are no other users. The tool does not access, store or share any other YouTube user's data.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:jm0051700@gmail.com">jm0051700@gmail.com</a></p>
+
+<div class="lang" lang="ko">
+<h2>한국어</h2>
+<p>Pudding Clipper는 채널 운영자 한 명이 쓰는 개인용 편집 도구입니다. 버튜버 라이브 다시보기에서 하이라이트 클립을 잘라 자막과 간단한 연출을 넣고, 운영자 PC에서 렌더한 뒤, 운영자가 소유한 유튜브 채널 두 곳(プリン戦士 · 푸링전사)에만 업로드합니다. 다른 사용자는 없으며, 다른 유튜브 사용자의 데이터에 접근하거나 저장·공유하지 않습니다.</p>
+</div>
+<div class="lang" lang="ja">
+<h2>日本語</h2>
+<p>Pudding Clipper は、チャンネル運営者本人だけが使う個人用の編集ツールです。VTuber の配信アーカイブから切り抜きを作り、字幕と簡単な演出を付けて運営者の PC でレンダリングし、運営者が所有する YouTube チャンネル 2 つ（プリン戦士・푸링전사）にだけアップロードします。ほかの利用者はおらず、ほかの YouTube ユーザーのデータにはアクセス・保存・共有しません。</p>
+</div>
+<p class="mut">Last updated: 2026-10-09</p>
+</main></body>
+</html>
